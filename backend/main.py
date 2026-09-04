@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.database import get_db_connection
+from database import get_db_connection
 from backend.api.branches import router as branches_router
 from backend.api.customers import router as customers_router
 from backend.api.accounts import router as accounts_router
