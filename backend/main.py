@@ -2,20 +2,20 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from database import get_db_connection
-from backend.api.branches import router as branches_router
-from backend.api.customers import router as customers_router
-from backend.api.accounts import router as accounts_router
-from backend.api.employees import router as employees_router
-from backend.api.beneficiaries import router as beneficiaries_router
-from backend.api.card_transactions import router as card_transactions_router
-from backend.api.cards import router as cards_router
-from backend.api.complaints import router as complaints_router
-from backend.api.credit_scores import router as credit_scores_router
-from backend.api.fund_transfers import router as fund_transfers_router
-from backend.api.loan_payments import router as loan_payments_router
-from backend.api.loans import router as loans_router
-from backend.api.transactions import router as transactions_router
-from backend.api.analytics import router as analytics_router
+from api.branches import router as branches_router
+from api.customers import router as customers_router
+from api.accounts import router as accounts_router
+from api.employees import router as employees_router
+from api.beneficiaries import router as beneficiaries_router
+from api.card_transactions import router as card_transactions_router
+from api.cards import router as cards_router
+from api.complaints import router as complaints_router
+from api.credit_scores import router as credit_scores_router
+from api.fund_transfers import router as fund_transfers_router
+from api.loan_payments import router as loan_payments_router
+from api.loans import router as loans_router
+from api.transactions import router as transactions_router
+from api.analytics import router as analytics_router
 
 app = FastAPI(
     title="Banking AI Reporting Platform",
